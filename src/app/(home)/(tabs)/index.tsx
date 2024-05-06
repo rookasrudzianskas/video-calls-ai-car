@@ -1,18 +1,10 @@
-import {StyleSheet, Text, View} from 'react-native';
-import EditScreenInfo from "@/src/components/EditScreenInfo";
+import { router } from 'expo-router';
+import { ChannelList } from 'stream-chat-expo';
 
-export default function TabOneScreen() {
+export default function MainTabScreen() {
   return (
-    <View style={styles.container}>
-    </View>
+    <ChannelList
+      onSelect={(channel) => router.push(`/channel/${channel.cid}`)}
+    />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white'
-  }
-});
