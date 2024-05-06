@@ -6,7 +6,9 @@ import {Pressable, useColorScheme} from 'react-native';
 import Colors from '@/constants/Colors';
 import {useClientOnlyValue} from "@/src/components/useClientOnlyValue";
 import {Ionicons} from "@expo/vector-icons";
-// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
+import { StreamChat } from 'stream-chat';
+
+const client = StreamChat.getInstance('da99s7ga4zpb');
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
   color: string;
