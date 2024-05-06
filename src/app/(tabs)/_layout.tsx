@@ -1,12 +1,11 @@
 import React from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
-import { Pressable } from 'react-native';
+import {Pressable, useColorScheme} from 'react-native';
 
 import Colors from '@/constants/Colors';
-import { useColorScheme } from '@/components/useColorScheme';
-import { useClientOnlyValue } from '@/components/useClientOnlyValue';
-
+import {useClientOnlyValue} from "@/src/components/useClientOnlyValue";
+import {Ionicons} from "@expo/vector-icons";
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
@@ -29,14 +28,13 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Chats',
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
                 {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
+                  <Ionicons
+                    name="call-outline"
                     size={25}
                     color={Colors[colorScheme ?? 'light'].text}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
@@ -45,13 +43,14 @@ export default function TabLayout() {
               </Pressable>
             </Link>
           ),
+          tabBarIcon: ({ color }) => <Ionicons name="chatbox-outline" size={24} color={color} />
         }}
       />
       <Tabs.Screen
         name="two"
         options={{
           title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons name="chatbox-outline" size={24} color={color} />
         }}
       />
     </Tabs>
