@@ -18,7 +18,7 @@
     "ios": {
       "supportsTablet": true,
       "bitcode": false,
-      "bundleIdentifier": "com.vadinsavin.Telegram"
+      "bundleIdentifier": "com.rokasrudzianskas.Telegram"
     },
     "android": {
       "adaptiveIcon": {
@@ -40,7 +40,7 @@
         "android.permission.SYSTEM_ALERT_WINDOW",
         "android.permission.WAKE_LOCK"
       ],
-      "package": "com.vadinsavin.Telegram"
+      "package": "com.rokasrudzianskas.Telegram"
     },
     "web": {
       "favicon": "./assets/favicon.png"
