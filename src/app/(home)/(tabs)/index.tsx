@@ -1,4 +1,4 @@
-import { Link, Stack, router } from 'expo-router';
+import { Link, Redirect, Stack, router } from 'expo-router';
 import { ChannelList } from 'stream-chat-expo';
 import { useAuth } from '../../../providers/AuthProvider';
 import { FontAwesome5 } from '@expo/vector-icons';
