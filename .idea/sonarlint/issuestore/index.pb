@@ -1,12 +1,8 @@
 
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 ?
 babel.config.js,7/7/775bd43a34022cef87b6af825cbd551f29473f73
 Q
 !src/app/(home)/(tabs)/_layout.tsx,8/e/8eb272a97045963f521735bb87ff9d9402b2ecfb
-P
- src/app/(home)/channel/[cid].tsx,9/9/99a5315657e95336ee638be246c89849eb417029
 H
 src/app/(home)/index.tsx,7/7/778945163725dc9e651c094d3172919d43b60ea3
 Q
@@ -21,5 +17,3 @@ N
 src/providers/AuthProvider.tsx,9/8/983a9869c5c3e17cd81b23eb70fd4c053b2c71aa
 A
 src/app/index.tsx,5/1/51fa7ebb5a433e00bc16e0fa88d8b26665b9cc6d
-O
-src/app/(home)/(tabs)/index.tsx,a/7/a7fb3d25a9cf3869704ab9530a821ea553f36be9
