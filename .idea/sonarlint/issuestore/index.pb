@@ -13,7 +13,5 @@ H
 src/app/(auth)/login.tsx,8/6/86c402b9a1b646eb07b61fdc3fba0503870d2304
 C
 src/lib/supabase.ts,a/4/a46f23afede28c85ffceff45dbe1f7fe8d56dbd4
-N
-src/providers/AuthProvider.tsx,9/8/983a9869c5c3e17cd81b23eb70fd4c053b2c71aa
 A
 src/app/index.tsx,5/1/51fa7ebb5a433e00bc16e0fa88d8b26665b9cc6d

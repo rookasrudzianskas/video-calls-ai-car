@@ -16,6 +16,9 @@ export default function ChatProvider({ children }: PropsWithChildren) {
     if (!profile) {
       return;
     }
+
+    console.log(profile.id);
+    tokenProvider().then(console.log);
     const connect = async () => {
 
       await client.connectUser(
